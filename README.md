@@ -20,3 +20,4 @@ Esto permitio inyectar el Bean de la capa de negocios, ya que los servlets no pu
 
 Se utilizaron las librerias CXF de Jboss, ya que si se queria utilizar las propias del proyecto, chocaban y daba error.
 
+El proyecto esta preparado para ser consumido por cualquier frontend, JSP, React, Angular, etc.
