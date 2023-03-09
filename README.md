@@ -1,14 +1,14 @@
 # Proyecto Web service SOAP
 
-El proyecto consta de un simple Web service SOAP, cumpliendo con un ABM a una base de datos (MySql).
-Se utilizó:
+## El proyecto consta de un simple Web service SOAP, cumpliendo con un ABM a una base de datos (MySql).
+## Se utilizó:
 
-- [ ]Servlets
-- [ ]Apache CXF 
-- [ ]Hibernate (HQL)
-- [ ]Spring framework
-- [ ]Desplegado en Jboss 7.2
-- [ ]Testeado con SoapUI 5.7
+- Servlets
+- Apache CXF 
+- Hibernate (HQL)
+- Spring framework
+- Desplegado en Jboss 7.2
+- Testeado con SoapUI 5.7
 
 ## Getting started
 
