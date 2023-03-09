@@ -1,0 +1,202 @@
+/*GENERAL*/
+button {
+	padding: 8px;
+	cursor: pointer;
+	border-radius: 5px;
+	border: 0px;
+}
+
+.oculto {
+	display: none;
+}
+
+input {
+	height: 13px;
+	padding: 5px;
+	border-radius: 5px;
+	border-color: rgb(159, 159, 159);
+}
+
+input:focus{
+	outline: none;
+}
+
+select {
+	height: 28px;
+	padding: 2px;
+	border-radius: 5px;
+	border-color: rgb(159, 159, 159);
+}
+select:focus{
+	outline: none;
+}
+
+caption{
+	text-align: left;
+	font-weight: 900;
+}
+
+.buscador{
+	position: relative;
+}
+
+.buscador #buscar{
+	width: 500px;
+	height: 30px;
+	vertical-align: middle;
+	position: relative;
+	padding-left: 5px;
+}
+
+.material-icons {
+	vertical-align: middle;
+	height: 30px;
+	
+}
+
+body{
+	background-color: rgb(116, 241, 199);
+}
+
+/* INDEX */
+#titulo{
+	text-align: center;
+	color: black;
+	text-underline-position: auto;
+	width: 150px;
+	height: fit-content;
+	border: 10px solid white;
+	border-radius: 10px;
+	
+}
+.tabla-socios{
+	border-collapse: collapse;
+}
+.tabla-socios th, .tabla-socios td {
+	padding: 8px 14px;
+	border: 1px solid #a2a2a2;
+	text-align: center;
+}
+
+.tabla-socios thead tr th {
+	background-color: #34495D;
+	color: white;
+}
+
+.tabla-socios tbody tr:nth-child(even) {
+	background-color: #ededed;
+}
+
+.tabla-socios tbody tr:nth-child(odd) {
+	background-color: #cdcdcd;
+}
+/*
+.nuevo-socio {
+	background-color: #7cfc00;
+	border: 2px solid #a2a2a2;
+}
+
+.nuevo-socio:hover {
+	background-color: #00cc00;
+}
+
+.modificar-socio {
+	background-color: skyblue;
+	border: 2px solid #a2a2a2;
+}
+
+.modificar-socio:hover {
+	background-color: #45b3e0;
+}
+
+.eliminar-socio {
+	background-color: red;
+	color: white;
+	border: 2px solid #a2a2a2;
+}
+
+.eliminar-socio:hover {
+	background-color: #b30000;
+}
+*/
+a{
+	text-decoration: none;
+	
+}
+
+.contenedor-tabla #vinculos{
+	float: right;
+	padding: 25px;
+	text-align: center;
+}
+
+
+/*NUEVO SOCIO*/
+#tituloNuevoSocio{
+	text-decoration: underline;
+	background-color: rgb(134, 186, 186);
+}
+
+#volver {
+	background-color: #0066ff;
+	color: white;
+	border: 2px solid #a2a2a2;
+	border-radius: 5px;
+	font-size: 17px;
+	text-align: center;
+	padding-top: 2px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 5px;
+}
+
+#volver:hover {
+	background-color: #0047b3;
+}
+
+#registrar {
+	background-color: #009900;
+	color: white;
+	border: 2px solid #a2a2a2;
+	height: 30px;
+	width: 100px;
+}
+
+#registrar:hover {
+	background-color: #006600;
+}
+
+.contenedor-tabla {
+	background-color: #efefef;
+	max-width: fit-content;
+	padding: 5px;
+	border-radius: 10px;
+	border: 3px solid #a2a2a2;
+}
+
+#estCivil{
+	background-color: rgb(134, 186, 186);
+	max-width: fit-content;
+	max-height: fit-content;
+	border: 2px solid gray;
+}
+#estCivil #cantHijos{
+	width: 40px;
+}
+
+/*MODIFICAR SOCIO*/
+#tituloModSocio{
+	text-decoration: underline;
+	background-color: rgb(134, 186, 186);
+}
+#nroSocioMod{
+	height: 27px;
+}
+#botonBuscar{
+	height: 27px;
+}
+/*ELIMINAR SOCIO*/
+#tituloEliminarSocio{
+	text-decoration: underline;
+	background-color: rgb(134, 186, 186);
+}
