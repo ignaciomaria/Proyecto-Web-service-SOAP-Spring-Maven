@@ -11,6 +11,7 @@
 - Testeado con SoapUI 5.7
 
 En la interfaz Webservice se le agrego: 
+
 @PostConstruct
 	public void init() {
 		SpringBeanAutowiringSupport.processInjectionBasedOnCurrentContext(this);
