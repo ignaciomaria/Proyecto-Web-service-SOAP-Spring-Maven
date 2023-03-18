@@ -22,7 +22,7 @@
 	<!-- CONFIGURACION BASE DE HIBERNATE -->
 	<!-- ********************** -->
 	<bean id="spring.datasource" class="org.springframework.jndi.JndiObjectFactoryBean">
-		<property name="jndiName" value="java:jboss/AcademiaDS" />
+		<property name="jndiName" value="java:jboss/AcademiaDS" /> <!-- java:jdbc/AcademiaDS -->
 		<property name="proxyInterface" value="javax.sql.DataSource" />
 		<property name="resourceRef" value="true" />
 	</bean>

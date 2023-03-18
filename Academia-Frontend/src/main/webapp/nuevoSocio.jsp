@@ -2,13 +2,20 @@
 
 <html>
 	<head>
-		<title>Primer formulario</title>
-	
+		<meta charset="utf-8">
+        <title>Nuevo socio</title>
+        <link rel="stylesheet" href="css/socio.css">
 	</head>
 	<body>
-		<s:form action="SocioAction">
-			<s:textfield name="nombreSocio" label="Nombre del socio"/>
-			<s:submit/>
-		</s:form>
+		 <div class="nuevoSocioMenu">
+            <main>
+                <h2>Nuevo Socio</h2>
+                <s:form action="AddAction">
+                    <s:textfield name="nombreSocio" label="Nombre y apellido"/><br>
+                    <s:submit value="Crear"/>
+                </s:form>
+                <h3><a href="index.jsp">Volver</a></h3>
+            </main>
+        </div>
 	</body>
 </html>

@@ -4,17 +4,19 @@
 "http://struts.apache.org/dtds/struts-2.0.dtd"> 
  
 <struts>
-    <constant name="struts.devMode" value="true" />
+    <constant name="struts.devMode" value="true" /> <!-- Le indica a struts que estamos en la etapa de desarrollo -->
     <constant name="struts.custom.i18n.resources" value="messages" />
     <constant name="struts.enable.SlashesInActionNames" value="true"/>
      
-<!--     <package name="socio" extends="struts-default"> -->
-<!--     	<action name="SocioAction" class="ar.com.softtek.academia.frontend.action.SocioAction"> -->
-<!--     		<result name="SUCCESS">/index.jsp</result> -->
-<!--     	</action> -->
-<!--     </package> -->
     <package name="default" namespace="/*" extends="struts-default">
-    	<action name="SocioAction" class="socio.action">
+    	<!-- Si no se especifica el metodo, por defecto toma execute -->
+    	<action name="AddAction" class="socio.action" method="addSocio"> <!-- name debe coincidir con action del formulario -->
+    		<result name="SUCCESS">/index.jsp</result> <!-- result redirecciona una vez cumplida el action -->
+    	</action>
+    	<action name="ModAction" class="socio.action" method="modSocio">
+    		<result name="SUCCESS">/index.jsp</result>
+    	</action>
+    	<action name="DelAction" class="socio.action" method="delSocio">
     		<result name="SUCCESS">/index.jsp</result>
     	</action>
     </package>

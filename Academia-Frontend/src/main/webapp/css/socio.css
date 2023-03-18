@@ -1,0 +1,73 @@
+body{
+    background-color: darkcyan;
+    padding: 20px;
+}
+
+h1{
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+h1,h2,p{
+    text-align: center;
+}
+
+.menu{
+    width: 80%;
+    background-color: burlywood;
+    margin: auto;
+    padding: 40px;
+    max-width: 600px;
+}
+
+hr{
+    height: 2px;
+    background-color: darkcyan;
+    border-color: darkcyan;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: darkcyan;
+}
+
+/*Nuevo Socio*/
+.nuevoSocioMenu{
+    width: 80%;
+    background-color: burlywood;
+    margin: auto;
+    padding: 40px;
+    max-width: 400px;
+}
+
+button{
+    padding: 5px;
+}
+
+/*Modificar socio*/
+.modificarSocioMenu{
+    width: 80%;
+    background-color: burlywood;
+    margin: auto;
+    padding: 40px;
+    max-width: 400px;
+}
+
+label{
+    margin: auto;
+    padding: 10px;
+}
+
+/*Eliminar socio*/
+.eliminarSocioMenu{
+    width: 80%;
+    background-color: burlywood;
+    margin: auto;
+    padding: 40px;
+    max-width: 400px;
+}
