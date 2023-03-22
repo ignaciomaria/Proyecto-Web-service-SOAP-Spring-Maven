@@ -25,11 +25,11 @@ public class SocioBOimp implements ISocioBO{
 	}
 
 	@Override
-	public void crearSocio(String nombre) throws BusinessException{
+	public void crearSocio(String nombreYapellido, String documento, String direccion, Integer telefono, String mail,
+			String fechaDeNacimiento, String sexo, String plan) throws BusinessException {
 		// TODO Auto-generated method stub
 		try {
-			Socio socio = new Socio();
-			socio.setNombreYapellido(nombre);
+			Socio socio = new Socio(nombreYapellido, documento, direccion, telefono, mail, fechaDeNacimiento, sexo, plan);
 			this.socioDAO.save(socio);
 		} catch (PersistenceException e) {
 			// TODO Auto-generated catch block
@@ -91,5 +91,5 @@ public class SocioBOimp implements ISocioBO{
 			throw new BusinessException();
 		}
 	}
-	
+
 }

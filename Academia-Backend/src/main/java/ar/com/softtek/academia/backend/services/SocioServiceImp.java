@@ -37,10 +37,11 @@ public class SocioServiceImp implements SocioService{
 	}
 	
 	@Override
-	public void add(String nombre) throws ServiceException {
+	public void add(String nombreYapellido, String documento, String direccion, Integer telefono, String mail,
+			String fechaDeNacimiento, String sexo, String plan) throws ServiceException {
 		// TODO Auto-generated method stub
 		try {
-			socioBO.crearSocio(nombre);
+			socioBO.crearSocio(nombreYapellido, documento, direccion, telefono, mail, fechaDeNacimiento, sexo, plan);
 		} catch (BusinessException be) {
 			// TODO Auto-generated catch block
 			throw new ServiceException();
@@ -90,4 +91,5 @@ public class SocioServiceImp implements SocioService{
 			throw new ServiceException();
 		}
 	}
+
 }

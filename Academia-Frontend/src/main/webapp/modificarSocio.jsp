@@ -1,22 +1,22 @@
 <%@taglib uri="/struts-tags" prefix="s" %>
 
 <html>
-	<head>
-		<meta charset="utf-8">
-        <title>Modificar socio</title>
+    <head>
+        <meta charset="utf-8">
+        <title>Modificar Socio</title>
         <link rel="stylesheet" href="css/socio.css">
-	</head>
-	<body>
-        <div class="modificarSocioMenu">
+    </head>
+    <body>
+        <div class="menu">
             <main>
                 <h2>Modificar Socio</h2>
-                <s:form action="ModAction">
-                    <s:textfield name="nombreSocio" label="Nombre de socio a modificar"/><br>
-                    <s:textfield name="nuevoNombre" label="Nuevo nombre"/><br>
-                    <s:submit value="Modificar"/>
-                </s:form>
-                <h3><a href="index.jsp">Volver</a></h3>
+                <form action="ModAction">
+                    <label>Nombre de socio a modificar: <input type="text" name="nombreSocio" autocomplete="off" required></label><br><br>
+                    <label>Nuevo nombre y apellido: <input type="text" name="nuevoNombre" autocomplete="off" required></label><br>
+                    <input type="submit" value="Modificar" class="botonSubmit">
+                    <input type="button" value="Volver" class="volver" onClick="history.go(-1);">
+                </form>
             </main>
         </div>
-	</body>
+    </body>
 </html>

@@ -20,7 +20,11 @@ public interface SocioService {
 	
 	@WebMethod(operationName = "Add")
 	@WebResult(name = "AddResult")
-	public void add(@WebParam(name = "Nombre") String nombre ) throws ServiceException;
+	public void add(@WebParam(name = "Nombre") String nombreYapellido, 
+					@WebParam(name = "Documento") String documento, @WebParam(name = "Direccion") String direccion, 
+					@WebParam(name = "Telefono") Integer telefono, @WebParam(name = "Mail") String mail, 
+					@WebParam(name = "Nacimiento") String fechaDeNacimiento, @WebParam(name = "Sexo") String sexo, 
+					@WebParam(name = "Plan") String plan) throws ServiceException;
 	
 	
 	@WebMethod(operationName = "GetAll")

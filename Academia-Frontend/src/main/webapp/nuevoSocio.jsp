@@ -1,21 +1,21 @@
 <%@taglib uri="/struts-tags" prefix="s" %>
 
 <html>
-	<head>
-		<meta charset="utf-8">
-        <title>Nuevo socio</title>
+    <head>
+        <meta charset="utf-8">
+        <title>Nuevo Socio</title>
         <link rel="stylesheet" href="css/socio.css">
-	</head>
-	<body>
-		 <div class="nuevoSocioMenu">
+    </head>
+    <body>
+        <div class="menu">
             <main>
                 <h2>Nuevo Socio</h2>
-                <s:form action="AddAction">
-                    <s:textfield name="nombreSocio" label="Nombre y apellido"/><br>
-                    <s:submit value="Crear"/>
-                </s:form>
-                <h3><a href="index.jsp">Volver</a></h3>
+                <form action="AddAction">
+                    <label>Nombre y apellido: <input type="text" name="nombreSocio" autocomplete="off" required></label><br>
+                    <input type="submit" value="Crear" class="botonSubmit">
+                    <input type="button" value="Volver" class="volver" onClick="history.go(-1);">
+                </form>
             </main>
         </div>
-	</body>
+    </body>
 </html>

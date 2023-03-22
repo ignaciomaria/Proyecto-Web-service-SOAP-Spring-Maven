@@ -10,7 +10,8 @@ public interface ISocioBO {
 	
 	public void setSocioDAO(SocioDAOimp socioDAO) throws BusinessException;
 	
-	public void crearSocio(String nombre) throws BusinessException;
+	public void crearSocio(String nombreYapellido, String documento, String direccion, Integer telefono, String mail,
+			String fechaDeNacimiento, String sexo, String plan) throws BusinessException;
 	
 	public List<SocioDTO> getAllSocios() throws BusinessException;
 	

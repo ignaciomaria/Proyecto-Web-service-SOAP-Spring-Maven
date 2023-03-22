@@ -7,16 +7,41 @@
         <link rel="stylesheet" href="css/socio.css">
 	</head>
 	<body>
-		<div class="menu">
+        <div class="menu">
             <main>
                 <h1>ADMINISTRACION DE SOCIOS</h1>
                 <hr>
-                <p>
-                	<h2><s:a href="nuevoSocio.jsp">Nuevo Socio</s:a></h2>
-                    <h2><s:a href="modificarSocio.jsp">Modificar Socio</s:a></h2>
-                    <h2><s:a href="eliminarSocio.jsp">Eliminar Socio</s:a></h2>
-                </p> 
+                    <h2><a href="nuevoSocio.jsp">Nuevo Socio</a></h2>
+                    <h2><a href="modificarSocio.jsp">Modificar Socio</a></h2>
+                    <h2><a href="eliminarSocio.jsp">Eliminar Socio</a></h2>
             </main>
         </div>
-	</body>
+        <div class="listaSocios">
+			<table>
+				<caption>Tabla de socios</caption>
+				<thead>
+					<tr>
+						<th>Nombre</th>
+						<th>Tipo 2</th>
+						<th>Tipo 3</th>
+						<th>Tipo 4</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+					</tr>
+				</tbody>
+			</table>
+        </div>
+    </body>
 </html>

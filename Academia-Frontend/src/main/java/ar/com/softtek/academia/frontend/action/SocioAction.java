@@ -14,8 +14,6 @@ public class SocioAction extends ActionSupport{
 	
 	private String nuevoNombre;
 	
-	private String nombreEliminar;
-	
 	//Constructor 
 	public SocioAction() {}
 	
@@ -44,14 +42,6 @@ public class SocioAction extends ActionSupport{
 		this.nuevoNombre = nuevoNombre;
 	}
 
-	public String getNombreEliminar() {
-		return nombreEliminar;
-	}
-
-	public void setNombreEliminar(String nombreEliminar) {
-		this.nombreEliminar = nombreEliminar;
-	}
-
 	//----------------------------------------------------------------------------
 	@Override
 	public String execute() throws Exception {
@@ -60,7 +50,7 @@ public class SocioAction extends ActionSupport{
 	}
 	
 	public String addSocio() throws Exception {
-		this.socioService.add(this.getNombreSocio());
+		this.socioService.add(this.getNombreSocio(), null, null, null, null, null, null, null);
 		return "SUCCESS";
 	}
 	
@@ -70,7 +60,7 @@ public class SocioAction extends ActionSupport{
 	}
 	
 	public String delSocio()throws Exception {
-		this.socioService.remuveByName(this.nombreEliminar);
+		this.socioService.remuveByName(this.nombreSocio);
 		return "SUCCESS";
 	}
 }
