@@ -11,12 +11,15 @@
     <package name="default" namespace="/*" extends="struts-default">
     	<!-- Si no se especifica el metodo, por defecto toma execute -->
     	<action name="AddAction" class="socio.action" method="addSocio"> <!-- name debe coincidir con action del formulario -->
-    		<result name="SUCCESS">/index.jsp</result> <!-- result redirecciona una vez cumplida el action -->
+    		<result name="SUCCESS" type="redirectAction">GetAll</result> <!-- result redirecciona una vez cumplida el action -->
     	</action>
     	<action name="ModAction" class="socio.action" method="modSocio">
-    		<result name="SUCCESS">/index.jsp</result>
+    		<result name="SUCCESS" type="redirectAction">GetAll</result>
     	</action>
     	<action name="DelAction" class="socio.action" method="delSocio">
+    		<result name="SUCCESS" type="redirectAction">GetAll</result>
+    	</action>
+    	<action name="GetAll" class="socio.action" method="getAll">
     		<result name="SUCCESS">/index.jsp</result>
     	</action>
     </package>

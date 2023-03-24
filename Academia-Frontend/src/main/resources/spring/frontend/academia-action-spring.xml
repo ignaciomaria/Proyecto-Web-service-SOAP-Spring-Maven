@@ -12,6 +12,5 @@
 	  
 	<bean id="socio.action" class="ar.com.softtek.academia.frontend.action.SocioAction">
 		  <property name="socioService" ref="client.SocioService"></property>
-		 
 	</bean>
 </beans>

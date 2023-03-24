@@ -30,6 +30,14 @@
 				</thead>
 				<tbody>
 					<s:iterator value="socios">
+					<s:if test="%{#socios == null}">
+						<tr>
+							<td>NULL</td>
+							<td>NULL</td>
+							<td>NULL</td>
+							<td>NULL</td>
+						</tr>
+					</s:if>
 					<tr>
 						<td><s:property value="nombreYapellido"/></td>
 						<td><s:property value="documento"/></td>
