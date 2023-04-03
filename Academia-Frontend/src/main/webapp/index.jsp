@@ -13,7 +13,6 @@
                 <hr>
                     <h2><a href="nuevoSocio.jsp">Nuevo Socio</a></h2>
                     <h2><a href="modificarSocio.jsp">Modificar Socio</a></h2>
-                    <h2><a href="eliminarSocio.jsp">Eliminar Socio</a></h2>
             </main>
         </div>
         <div class="listaSocios">
@@ -26,15 +25,22 @@
 						<th>Documento</th>
 						<th>Direccion</th>
 						<th>Telefono</th>
+						<th>Opciones</th>
 					</tr>
 				</thead>
 				<tbody>
-					<s:iterator value="socios">
+					<s:iterator value="socios" var="socio" status="estatus">
 					<tr>
 						<td><s:property value="nombreYapellido"/></td>
 						<td><s:property value="documento"/></td>
 						<td><s:property value="direccion"/></td>
 						<td><s:property value="telefono"/></td>
+						<td>
+							<s:a action="DelAction">
+								<s:param name="nombreSocio" value="nombreYapellido"/>
+								Eliminar
+							</s:a>
+						</td>
 					</tr>
 					</s:iterator>
 				</tbody>

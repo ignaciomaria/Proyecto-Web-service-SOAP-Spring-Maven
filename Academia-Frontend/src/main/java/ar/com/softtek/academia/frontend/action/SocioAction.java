@@ -116,7 +116,7 @@ public class SocioAction extends ActionSupport{
 	public void setSocios(List<SocioDTO> socios) {
 		this.socios = socios;
 	}
-	
+
 	//----------------------------------------------------------------------------
 	@Override
 	public String execute() throws Exception {

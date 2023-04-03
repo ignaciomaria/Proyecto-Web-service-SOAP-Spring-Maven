@@ -11,7 +11,7 @@
             <main>
                 <h2>Modificar Socio</h2>
                 <form action="ModAction">
-                    <label>Nombre de socio a modificar: <input type="text" name="nombreSocio" autocomplete="off" required></label><br><br>
+                	<label>Nombre actual: <input type="text" name="nombreSocio" autocomplete="off" required></label><br><br>
                     <label>Nuevo nombre y apellido: <input type="text" name="nuevoNombre" autocomplete="off" required></label><br>
                     <input type="submit" value="Modificar" class="botonSubmit">
                     <input type="button" value="Volver" class="volver" onClick="history.go(-1);">
